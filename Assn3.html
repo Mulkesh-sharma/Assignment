@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    #header{
+        background-color: rgb(52, 52, 52);
+        align-content: center;
+        text-align: center;
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+    .blog{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    body{
+        background-color: gray;
+    }
+    #parent{
+        display: flex;
+        flex-direction: row;
+    }
+    #layout1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #layout2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #layout3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #layout4{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #layout5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    h1{
+        display: none;
+        text-align: center;
+        color: #29b8ff;
+    }
+
+    @media  screen and (min-width:300px) and (max-width:600px){
+        button{
+            width: 100%;
+            list-style-type: decimal-leading-zero;
+        }
+        h1{
+            display: block;
+            color: aqua;
+        }
+        body{
+            display: flexbox;
+            
+        }
+        .blog{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+        #layout1{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #layout2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #layout3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #layout4{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #layout5{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+        
+
+    }
+</style>
+<body>
+        <h1>My Portfolio</h1>
+        <div id="header">
+        <button type="button" onclick="Howerse(1)">Home</button>
+        <button type="button" onclick="Howerse(2)">Education</button>
+        <button type="button" onclick="Howerse(3)">Project</button>
+        <button type="button" onclick="Howerse(4)">Skills</button>
+        <button type="button" onclick="Howerse(5)">Contact Me</button></div>
+    <hr>
+    <div id="Parent">
+    <div id="layout1" class="blog">
+        <img  src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt="dummy"><div>
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero reprehenderit a voluptatibus aut nisi sapiente,
+            ex enim cumque ab hic repellendus reiciendis repellat similique unde iusto rem sed sint veniam?</p></div>
+    </div>
+    <div id="layout2" class="blog">
+        <img alt="dummy" src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"><div>
+        <h2>Education</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aperiam assumenda dignissimos, ipsam impedit ipsa,
+            inventore officia provident culpa quam error velit recusandae cumque, repellendus placeat dicta et corporis odio.</p></div>
+    </div>
+    <div id="layout3" class="blog">
+        <img alt="dummy" src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"><div>
+        <h2>Projects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id blanditiis delectus cumque reprehenderit soluta
+            voluptate at quod! Beatae odio eius eum? Obcaecati magni explicabo nihil consequuntur impedit iure totam.</p></div>
+    </div>
+    <div id="layout4" class="blog">
+        <img alt="dummy" src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"><div>
+        <h2>Skills</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ut eveniet illum rerum rem et fugiat culpa
+            nihil repudiandae tempora, quasi a esse reprehenderit similique, deleniti eum accusantium, aspernatur voluptatem.</p></div>
+    </div>
+    <div id="layout5" class="blog">
+        <img alt="dummy" src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg"><div>
+        <h2>Contact Me</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quasi ea, nostrum dolores 
+        Omnis, id voluptate, expedita possimus, ratione architecto itaque hic facilis nam fugiat similique explicabo placeat.</p></div>
+    </div>
+    </div>
+</body>
+<!-- <script>
+    function Howerse(layoutNumber){
+        var layouts = document.querySelectorAll('.blog');
+
+        layouts.forEach(function(layout){
+            layout.classList.remove('active');
+        });
+        document.getElementById('layout' + layoutNumber).classList.add('active');
+    }
+
+
+    
+</script> -->
+</html>
